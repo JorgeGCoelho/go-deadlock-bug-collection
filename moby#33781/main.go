@@ -8,10 +8,12 @@ import (
 // daemon/health.go:184
 func main(ctx context.Context, stop chan struct{}) {
 	results := make(chan struct{})
+
 	go func() {
 		results <- struct{}{}
 		close(results)
 	}()
+
 	select {
 	case <-stop:
 		// results is not emptied, goroutine leak

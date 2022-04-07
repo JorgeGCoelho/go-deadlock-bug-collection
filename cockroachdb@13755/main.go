@@ -4,7 +4,7 @@ import (
 	"context"
 )
 
-// Database feches Rows, that must be closed
+// Database fetches Rows, that must be closed
 // Since go1.8, when Rows are instantiated, in initContextClose() it spawns a goroutine that waits for
 // ctx.Done() to be closed, after which it calls close() on the Rows.
 // The Rows.close() also calls cancel on the ctx. So either manually closing the Rows or canceling the ctx is valid.

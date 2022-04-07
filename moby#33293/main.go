@@ -7,7 +7,7 @@ import "errors"
 // Simple send to channel without receive
 func main() chan error {
 	errC := make(chan error)
-	if true {
+	if true /* some error condition */ {
 		errC <- errors.New("")
 		return errC
 	}
