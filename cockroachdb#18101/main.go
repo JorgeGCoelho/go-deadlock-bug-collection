@@ -1,4 +1,4 @@
-package cockroachdb_18101
+package main
 
 import "context"
 

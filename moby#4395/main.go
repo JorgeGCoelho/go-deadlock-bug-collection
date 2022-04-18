@@ -1,4 +1,4 @@
-package moby_4395
+package main
 
 // f83482c91885b8980031f44e30d73d6971042601
 

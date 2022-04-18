@@ -1,4 +1,4 @@
-package grpc_go_1275
+package main
 
 // Through a whole bunch of function calls, this is a "missing write" kind of deadlock
 // Client/Server kinda deal, where messages are sent between each other

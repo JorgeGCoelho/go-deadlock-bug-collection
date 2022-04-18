@@ -1,4 +1,4 @@
-package etcd_6857
+package main
 
 // node seems designed as a server/client model. It features an infinite loop with a select statement that waits to
 // receive a message from a number of channels, each channel represents an operation.

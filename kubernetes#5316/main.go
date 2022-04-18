@@ -1,4 +1,4 @@
-package kubernetes_5316
+package main
 
 import "time"
 
@@ -24,4 +24,12 @@ func finishRequest(timeout time.Duration, fn func() (struct{}, error)) {
 	case <-time.After(timeout):
 		return
 	}
+}
+
+func main() {
+	fn := func() (struct{}, error) {
+		time.Sleep(5 * time.Second)
+		return struct{}{}, nil
+	}
+	finishRequest(time.Second, fn)
 }

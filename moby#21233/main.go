@@ -1,4 +1,4 @@
-package moby_21233
+package main
 
 import "math/rand"
 

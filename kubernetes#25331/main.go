@@ -1,4 +1,4 @@
-package kubernetes_25331
+package main
 
 import "sync"
 

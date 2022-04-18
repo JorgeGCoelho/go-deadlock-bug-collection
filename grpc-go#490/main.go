@@ -1,4 +1,4 @@
-package grpc_go_490
+package main
 
 import "context"
 

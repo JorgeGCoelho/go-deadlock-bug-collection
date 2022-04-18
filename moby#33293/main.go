@@ -1,15 +1,17 @@
-package moby_33293
-
-import "errors"
+package main
 
 // ab83b924bc5dde5c2ac81b0befe5e370f3acb7e3
 
-// Simple send to channel without receive
-func main() chan error {
-	errC := make(chan error)
+func ContainerWait() chan struct{} {
+	errC := make(chan struct{})
 	if true /* some error condition */ {
-		errC <- errors.New("")
+		errC <- struct{}{}
 		return errC
 	}
 	return nil
+}
+
+// Simple send to channel without receive
+func main() {
+	ContainerWait()
 }

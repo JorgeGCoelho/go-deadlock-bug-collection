@@ -1,4 +1,4 @@
-package moby_33781
+package main
 
 import (
 	"context"
@@ -6,7 +6,7 @@ import (
 
 // Goroutine leak due to failure to drain the channel
 // daemon/health.go:184
-func main(ctx context.Context, stop chan struct{}) {
+func monitor(ctx context.Context, stop chan struct{}) {
 	results := make(chan struct{})
 
 	go func() {
@@ -22,4 +22,11 @@ func main(ctx context.Context, stop chan struct{}) {
 	case <-ctx.Done():
 		<-results
 	}
+}
+
+func main() {
+	ctx := context.Background()
+	stop := make(chan struct{})
+	monitor(ctx, stop)
+	close(stop)
 }

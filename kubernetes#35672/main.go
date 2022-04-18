@@ -1,4 +1,4 @@
-package Kubernetes_35672
+package main
 
 import "time"
 
@@ -25,4 +25,9 @@ func ListAndWatch(stopCh <-chan struct{}) {
 			// Resync something
 		}
 	}()
+}
+
+func main() {
+	stop := make(chan struct{})
+	ListAndWatch(stop)
 }
