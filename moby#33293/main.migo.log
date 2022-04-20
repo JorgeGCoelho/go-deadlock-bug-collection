@@ -1,0 +1,2 @@
+ssabuild: 2022/04/18 11:09:52 Program loaded and type checked
+{"level":"warn","ts":1650276592.44467,"caller":"migoinfer/migo.go:211","msg":"instr Channel t0/\"main\".ContainerWait0.t0_chan0 unavail. in current scope (unexported)\n\t/home/jorge/Code/MIEI/10-Diss/bug-collection/bug-collection/moby#33293/main.go:6:14"}

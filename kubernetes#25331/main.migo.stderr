@@ -1,0 +1,3 @@
+/home/jorge/Code/MIEI/10-Diss/bug-collection/bug-collection/kubernetes#25331/main.go:8:11: undeclared name: watchChan
+/home/jorge/Code/MIEI/10-Diss/bug-collection/bug-collection/kubernetes#25331/main.go:16:16: undeclared name: parseError
+2022/04/18 11:09:51 Build failed:couldn't load packages due to errors: main

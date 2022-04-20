@@ -1,0 +1,3 @@
+{"level":"warn","ts":1650276592.8011982,"caller":"migoinfer/instr.go:281","msg":"instr FieldAddr: parameter t : *rtype is not a struct\t*internal/reflectlite.rtype\n\t/usr/lib/go/src/internal/reflectlite/type.go:537:45"}
+{"level":"warn","ts":1650276592.8031778,"caller":"migoinfer/instr.go:494","msg":"instr Cannot find method invoke ctx.Done() for invoke call: interface method is abstract\n\tMeth: func (context.Context).Done() <-chan struct{}\n\tImpl: ctx:context.Context"}
+{"level":"warn","ts":1650276592.803304,"caller":"migoinfer/migo.go:181","msg":"instr Channel t4/Undefined_379 unavail. in current scope (unexported)\n\t/home/jorge/Code/MIEI/10-Diss/bug-collection/bug-collection/moby#33781/main.go:22:17"}

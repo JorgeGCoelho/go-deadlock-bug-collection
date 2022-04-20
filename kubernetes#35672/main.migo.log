@@ -1,0 +1,6 @@
+ssabuild: 2022/04/18 11:09:51 Program loaded and type checked
+ssabuild: 2022/04/18 11:09:51 Skip package: runtime (Runtime is ignored for static analysis)
+{"level":"warn","ts":1650276591.7253654,"caller":"migoinfer/instr.go:281","msg":"instr FieldAddr: &t1.r [#1] is not a struct\t*time.runtimeTimer\n\t-"}
+{"level":"warn","ts":1650276591.7255123,"caller":"migoinfer/instr.go:281","msg":"instr FieldAddr: &t1.r [#1] is not a struct\t*time.runtimeTimer\n\t-"}
+{"level":"warn","ts":1650276591.7255294,"caller":"migoinfer/instr.go:281","msg":"instr FieldAddr: &t1.r [#1] is not a struct\t*time.runtimeTimer\n\t-"}
+{"level":"warn","ts":1650276591.7257226,"caller":"migoinfer/migo.go:282","msg":"instr Argument new <-chan time.Time (resyncCh) undefined → nil chan.\n\t/home/jorge/Code/MIEI/10-Diss/bug-collection/bug-collection/kubernetes#35672/main.go:16:2"}

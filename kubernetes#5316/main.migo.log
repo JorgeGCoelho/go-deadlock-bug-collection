@@ -1,0 +1,5 @@
+ssabuild: 2022/04/18 11:09:52 Program loaded and type checked
+ssabuild: 2022/04/18 11:09:52 Skip package: runtime (Runtime is ignored for static analysis)
+{"level":"warn","ts":1650276592.0936174,"caller":"migoinfer/instr.go:281","msg":"instr FieldAddr: &t1.r [#1] is not a struct\t*time.runtimeTimer\n\t-"}
+{"level":"warn","ts":1650276592.093756,"caller":"migoinfer/instr.go:281","msg":"instr FieldAddr: &t1.r [#1] is not a struct\t*time.runtimeTimer\n\t-"}
+{"level":"warn","ts":1650276592.0937705,"caller":"migoinfer/instr.go:281","msg":"instr FieldAddr: &t1.r [#1] is not a struct\t*time.runtimeTimer\n\t-"}
