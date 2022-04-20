@@ -1,6 +1,6 @@
 package main
 
-// Through a whole bunch of function calls, this is a "missing write" kind of deadlock
+// Through a bunch of function calls, this is a "missing write" kind of deadlock
 // Client/Server kinda deal, where messages are sent between each other
 // Connection is established, stream is created.
 // Client tries to read from the stream in a goroutine, server never sends a thing, and client stops the stream.
