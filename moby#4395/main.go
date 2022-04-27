@@ -11,7 +11,7 @@ package main
 // For a promise implementation, generally the child goroutine doesn't need to wait for the parent go routine to receive
 // the value, so the fix is to increase the channel capacity to 1.
 
-// utils/utils.go:35
+// Go utils/utils.go:35
 func Go(f func() error) chan error {
 	ch := make(chan error)
 	go func() {

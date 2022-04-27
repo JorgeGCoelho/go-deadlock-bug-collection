@@ -2,7 +2,7 @@ package main
 
 import "context"
 
-// Steam is created, goroutine is instantiated to close stream when context is canceled
+// Stream is created, goroutine is instantiated to close stream when context is canceled
 // Seems like, that is not enough. An error channel also exists, to signify that an error has occurred (error channel is closed).
 // Error doesn't seem to imply a canceling of the context (didn't find that in the code)
 
