@@ -1,3 +1,0 @@
-{"level":"warn","ts":1650276592.0936174,"caller":"migoinfer/instr.go:281","msg":"instr FieldAddr: &t1.r [#1] is not a struct\t*time.runtimeTimer\n\t-"}
-{"level":"warn","ts":1650276592.093756,"caller":"migoinfer/instr.go:281","msg":"instr FieldAddr: &t1.r [#1] is not a struct\t*time.runtimeTimer\n\t-"}
-{"level":"warn","ts":1650276592.0937705,"caller":"migoinfer/instr.go:281","msg":"instr FieldAddr: &t1.r [#1] is not a struct\t*time.runtimeTimer\n\t-"}

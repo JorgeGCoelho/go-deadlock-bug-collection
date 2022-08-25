@@ -1,4 +1,0 @@
-ssabuild: 2022/04/18 11:09:50 Program loaded and type checked
-ssabuild: 2022/04/18 11:09:50 Skip package: runtime (Runtime is ignored for static analysis)
-{"level":"warn","ts":1650276590.6410615,"caller":"migoinfer/instr.go:494","msg":"instr Cannot find method invoke t0.Done() for invoke call: Unknown implementation of interface interface{Deadline() (deadline time.Time, ok bool); Done() <-chan struct{}; Err() error; Value(key any) any}: context.Background() (type: context.Context)\n\tMeth: func (context.Context).Done() <-chan struct{}\n\tImpl: t0:context.Context"}
-{"level":"warn","ts":1650276590.6411126,"caller":"migoinfer/migo.go:181","msg":"instr Channel t7/Undefined_552 unavail. in current scope (unexported)\n\t/home/jorge/Code/MIEI/10-Diss/bug-collection/bug-collection/cockroachdb#18101/main.go:22:18"}

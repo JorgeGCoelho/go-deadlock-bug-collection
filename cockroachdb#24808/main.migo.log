@@ -1,5 +1,0 @@
-ssabuild: 2022/04/18 11:09:50 Program loaded and type checked
-{"level":"warn","ts":1650276590.6762033,"caller":"migoinfer/migo.go:282","msg":"instr Argument <nil>:t0[#0] undefined → nil chan.\n\t-"}
-{"level":"warn","ts":1650276590.6763096,"caller":"migoinfer/migo.go:211","msg":"instr Channel t2/Undefined_484 unavail. in current scope (unexported)\n\t/home/jorge/Code/MIEI/10-Diss/bug-collection/bug-collection/cockroachdb#24808/main.go:15:4"}
-{"level":"warn","ts":1650276590.6763856,"caller":"migoinfer/migo.go:181","msg":"instr Channel t1/Undefined_665 unavail. in current scope (unexported)\n\t/home/jorge/Code/MIEI/10-Diss/bug-collection/bug-collection/cockroachdb#24808/main.go:24:13"}
-{"level":"warn","ts":1650276590.6764245,"caller":"migoinfer/migo.go:282","msg":"instr Argument <nil>:t0[#0] undefined → nil chan.\n\t-"}
