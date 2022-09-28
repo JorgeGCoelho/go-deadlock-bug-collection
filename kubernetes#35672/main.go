@@ -1,7 +1,5 @@
 package main
 
-import "time"
-
 // stopCh is closed to stop this (and other) goroutines from a parent goroutine
 // Seems like a naive implementation of context
 
@@ -13,7 +11,7 @@ import "time"
 func ListAndWatch(stopCh <-chan struct{}) {
 
 	// Channel based on a timer to resync something
-	resyncCh := time.NewTimer(1 * time.Minute).C
+	resyncCh := make(chan struct{})
 
 	go func() {
 		for {
@@ -25,6 +23,8 @@ func ListAndWatch(stopCh <-chan struct{}) {
 			// Resync something
 		}
 	}()
+
+	resyncCh <- struct{}{}
 }
 
 func main() {

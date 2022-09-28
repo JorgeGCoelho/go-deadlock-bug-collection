@@ -1,18 +1,14 @@
 def main.main():
-    let t1 = newchan main.main0.t1_chan0, 0;
-    call main.monitor(t1);
-    close t1;
+    let t0 = newchan main.main0.t0_chan0, 0;
+    spawn main.monitor(t0);
+    close t0;
 def main.monitor$1(results):
     send results;
     close results;
 def main.monitor(stop):
     let t1 = newchan main.monitor0.t1_chan0, 0;
     spawn main.monitor$1(t1);
-    let t4 = newchan nilchan, 0;
     select
       case recv stop;
       case recv t1;
-      case recv t4; call main.monitor#6(stop, t1);
     endselect;
-def main.monitor#6(stop, t1):
-    recv t1;

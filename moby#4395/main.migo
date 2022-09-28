@@ -4,5 +4,4 @@ def main.main():
 def main.Go$1(ch):
     send ch;
 def main.Go(t2):
-    let t2 = newchan main.Go0.t2_chan0, 0;
     spawn main.Go$1(t2);

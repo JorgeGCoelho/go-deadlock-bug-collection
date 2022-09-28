@@ -1,8 +1,6 @@
 def main.main():
     let t0 = newchan main.main0.t0_chan0, 0;
     call main.ListAndWatch(t0);
-def time.NewTimer():
-    let t0 = newchan time.NewTimer0.t0_chan1, 1;
 def main.ListAndWatch$1(resyncCh, stopCh):
     call main.ListAndWatch$1#1(resyncCh, stopCh);
 def main.ListAndWatch$1#1(resyncCh, stopCh):
@@ -13,6 +11,6 @@ def main.ListAndWatch$1#1(resyncCh, stopCh):
 def main.ListAndWatch$1#2(resyncCh, stopCh):
     call main.ListAndWatch$1#1(resyncCh, stopCh);
 def main.ListAndWatch(stopCh):
-    call time.NewTimer();
-    let t1 = newchan nilchan, 0;
-    spawn main.ListAndWatch$1(t1, stopCh);
+    let t2 = newchan main.ListAndWatch0.t2_chan0, 0;
+    spawn main.ListAndWatch$1(t2, stopCh);
+    send t2;

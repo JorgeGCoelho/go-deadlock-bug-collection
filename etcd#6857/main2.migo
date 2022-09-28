@@ -1,9 +1,12 @@
 def main.main():
-    let status = newchan main.main0.status_chan0, 0;
-    let stop = newchan main.main0.stop_chan0, 0;
-    let done = newchan main.main0.done_chan0, 0;
+    let status = newchan main.main0.status_chan0, 0; -- status
+    let stop = newchan main.main0.stop_chan0, 0; -- stop
+    let done = newchan main.main0.done_chan0, 0; -- done
     spawn main.n.Run(status, stop, done);
-    call main.n.Stop(status, stop, done);
+    select
+      case send stop; recv done;
+      case recv done;
+    endselect;
     call main.n.Status(status, stop, done);
 def main.n.Run(status, stop, done):
     call main.n.Run#1(status, stop, done);
@@ -18,13 +21,6 @@ def main.n.Run#2(status, stop, done):
     call main.n.Run#1(status, stop, done);
 def main.n.Run#4(status, stop, done):
     close done;
-def main.n.Stop(status, stop, done):
-    select
-      case send stop; call main.n.Stop#1(status, stop, done);
-      case recv done;
-    endselect;
-def main.n.Stop#1(status, stop, done):
-    recv done;
 def main.n.Status(status, stop, done):
     let t0 = newchan main.n.Status0.t0_chan0, 0;
     send status;

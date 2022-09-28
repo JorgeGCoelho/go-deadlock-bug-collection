@@ -1,9 +1,8 @@
 def main.main():
-    let t0 = newchan main.ContainerWait0.t0_chan0, 0;
-    call main.ContainerWait(t0);
-def main.ContainerWait(_unexported_):
+    call main.ContainerWait();
+def main.ContainerWait():
     tau;
     if call main.ContainerWait#1(); else tau; endif;
-def main.ContainerWait#1(_unexported_):
+def main.ContainerWait#1():
     let t0 = newchan nilchan, 0;
     send t0;

@@ -1,2 +1,16 @@
 .idea
 .~*
+
+formula-*.mcf
+go-model.lps
+model.crl2
+*.kittel
+*.bc
+*.c
+*.dlock-orig.ds1
+*.dlock-orig.ds2
+*.dlock.ds1
+*.dlock.ds2
+*.godel2
+*.gong
+*.gcatch
