@@ -1,0 +1,15 @@
+Successfully built whole program. Now running checkers
+----------Bug[1]----------
+	Type: BMOC 	Reason: One or multiple channel operation is blocked.
+-----Blocking at:
+	File: /playground/src/main/main.go:27
+-----Blocking/Panic Path NO. 0
+ChanMake :/playground/src/main/main.go:14:18	 '✓'
+Go :/playground/src/main/main.go:16:2	 '✓'
+Chan_op :/playground/src/main/main.go:27:11	 Blocking/Panic
+Return :/playground/src/main/main.go:27:11	 '✗'
+-----Path NO. 1 	Entry func at: main.ListAndWatch$1
+JumpNow trying to build unchecked packages separately...
+
+
+Time of main(): seconds 0.059988609

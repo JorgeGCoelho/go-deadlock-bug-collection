@@ -1,0 +1,51 @@
+Successfully built whole program. Now running checkers
+----------Bug[1]----------
+	Type: BMOC 	Reason: One or multiple channel operation is blocked.
+-----Blocking at:
+	File: /playground/src/main/main.go:64
+-----Blocking/Panic Path NO. 0
+ChanMake :/playground/src/main/main.go:25:15	 '✓'
+ChanMake :/playground/src/main/main.go:26:15	 '✓'
+ChanMake :/playground/src/main/main.go:27:15	 '✓'
+Go :/playground/src/main/main.go:29:2	 '✓'
+Call :/playground/src/main/main.go:30:8	 '✓'
+Call :/playground/src/main/main.go:31:10	 '✓'
+ChanMake :/playground/src/main/main.go:62:11	 '✓'
+Chan_op :/playground/src/main/main.go:63:11	 '✓'
+Chan_op :/playground/src/main/main.go:64:9	 Blocking/Panic
+Return :/playground/src/main/main.go:64:2	 '✗'
+Return :/playground/src/main/main.go:31:10	 '✗'
+-----Path NO. 1 	Entry func at: (*main.node).Run
+Jump :/playground/src/main/main.go:35:7	 '✓'
+Select :/playground/src/main/main.go:37:3	 '✓'
+Select_case :/playground/src/main/main.go:37:3	 '✓'
+Chan_op :/playground/src/main/main.go:41:9	 '✓'
+Return :/playground/src/main/main.go:42:4	 '✓'
+
+----------Bug[2]----------
+	Type: BMOC 	Reason: One or multiple channel operation is blocked.
+-----Blocking at:
+	File: /playground/src/main/main.go:63
+-----Blocking/Panic Path NO. 0
+ChanMake :/playground/src/main/main.go:25:15	 '✓'
+ChanMake :/playground/src/main/main.go:26:15	 '✓'
+ChanMake :/playground/src/main/main.go:27:15	 '✓'
+Go :/playground/src/main/main.go:29:2	 '✓'
+Call :/playground/src/main/main.go:30:8	 '✓'
+Call :/playground/src/main/main.go:31:10	 '✓'
+ChanMake :/playground/src/main/main.go:62:11	 '✓'
+Chan_op :/playground/src/main/main.go:63:11	 Blocking/Panic
+Chan_op :/playground/src/main/main.go:64:9	 '✗'
+Return :/playground/src/main/main.go:64:2	 '✗'
+Return :/playground/src/main/main.go:31:10	 '✗'
+-----Path NO. 1 	Entry func at: (*main.node).Run
+Jump :/playground/src/main/main.go:35:7	 '✓'
+Select :/playground/src/main/main.go:37:3	 '✓'
+Select_case :/playground/src/main/main.go:37:3	 '✓'
+Chan_op :/playground/src/main/main.go:41:9	 '✓'
+Return :/playground/src/main/main.go:42:4	 '✓'
+
+Now trying to build unchecked packages separately...
+
+
+Time of main(): seconds 0.103476354

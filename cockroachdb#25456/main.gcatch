@@ -1,0 +1,16 @@
+Successfully built whole program. Now running checkers
+----------Bug[1]----------
+	Type: BMOC 	Reason: One or multiple channel operation is blocked.
+-----Blocking at:
+	File: /playground/src/main/main.go:17
+-----Blocking/Panic Path NO. 0
+Call :/playground/src/main/main.go:17:17	 '✓'
+ChanMake :/playground/src/main/main.go:8:13	 '✓'
+Return :/playground/src/main/main.go:8:2	 '✓'
+Chan_op :/playground/src/main/main.go:17:2	 Blocking/Panic
+Return :/playground/src/main/main.go:17:2	 '✗'
+
+Now trying to build unchecked packages separately...
+
+
+Time of main(): seconds 0.12711151
