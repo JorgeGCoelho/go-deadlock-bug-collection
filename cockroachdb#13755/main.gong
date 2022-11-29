@@ -1,0 +1,6 @@
+Gong: [unfoldTillGuard] We don't deal with Seq yet: 
+context.WithCancel3 <>; main.rs.awaitDone1 <> | 0
+
+real	0m0.006s
+user	0m0.006s
+sys	0m0.000s

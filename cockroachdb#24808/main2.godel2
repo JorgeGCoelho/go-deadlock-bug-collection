@@ -1,0 +1,13 @@
+[1mFile: main2.migo
+[0m[0mTermination Analysis:
+	 No For loops, trivially [92mTrue
+[0m[0m[1mFile: main2.migo
+[0m[0mFinite Control:		[92mTrue
+[0m[0mNo terminal state:	[91mFalse
+[0m[0mNo cycle:		[92mTrue
+[0m[0mNo global deadlock:	[91mFalse
+[0m[0mLiveness:		[91mFalse
+[0m[0mSafety:			[92mTrue
+[0m[0mData race free:		[92mTrue
+[0m[0mEventual reception:	[91mFalse
+[0m[0m

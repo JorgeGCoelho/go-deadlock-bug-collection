@@ -1,0 +1,8 @@
+Bound (k): 2
+Number of k-states: 5
+Liveness: [92mTrue
+[0mSafety: [92mTrue
+[0m
+real	0m0.010s
+user	0m0.010s
+sys	0m0.000s

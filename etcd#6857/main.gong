@@ -1,0 +1,6 @@
+Gong: [unfoldTillGuard] We don't deal with Seq yet: 
+main.n.Stop2 <status, stop1, done2>; main.n.Status <status, stop1, done2>; 0
+
+real	0m0.006s
+user	0m0.006s
+sys	0m0.000s

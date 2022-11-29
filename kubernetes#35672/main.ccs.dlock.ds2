@@ -1,0 +1,16 @@
+Entering directory '/home/jorge/Code/MIEI/10S-Diss/Deadlock_Detector_and_Resolver'
+---- 1 ----
+    ((*loop?.(resyncCh?.loop!.0 & stopCh?.0) || loop!.0) || resyncCh!.0)
+---- 1.loop ----
+    ((resyncCh!.0 || *loop?.(resyncCh?.loop!.0 & stopCh?.0)) || (resyncCh?.loop!.0 & stopCh?.0))
+---- 1.loop.resyncCh ----
+    (*loop?.(resyncCh?.loop!.0 & stopCh?.0) || loop!.0)
+---- 1.loop.resyncCh.loop ----
+    (*loop?.(resyncCh?.loop!.0 & stopCh?.0) || (resyncCh?.loop!.0 & stopCh?.0))
+
+
+Deadlocks:
+---- 1.loop.resyncCh.loop ----
+    (*loop?.(resyncCh?.loop!.0 & stopCh?.0) || (resyncCh?.loop!.0 & stopCh?.0))
+Resolved:
+*loop?.((resyncCh!.0 || resyncCh?.loop!.0) & (stopCh!.0 || stopCh?.0))

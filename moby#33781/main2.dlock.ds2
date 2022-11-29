@@ -1,0 +1,8 @@
+Entering directory '/home/jorge/Code/MIEI/10S-Diss/Deadlock_Detector_and_Resolver'
+---- 1 ----
+    (0 || ((stop?.0 & (results?.0 & ctx?.results?.0)) || results!.0))
+---- 1.results ----
+    0
+
+
+No deadlocks!

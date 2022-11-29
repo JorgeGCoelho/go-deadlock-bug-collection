@@ -1,0 +1,16 @@
+Entering directory '/home/jorge/Code/MIEI/10S-Diss/Deadlock_Detector_and_Resolver'
+---- 1 ----
+    (((ch!.0 + 0) || ch!.loop!.0) || *loop?.ch?.0)
+---- 1.+1 ----
+    ((*loop?.ch?.0 || ch!.loop!.0) || ch!.0)
+---- 1.+2 ----
+    (*loop?.ch?.0 || ch!.loop!.0)
+
+
+Deadlocks:
+---- 1.+1 ----
+    ((*loop?.ch?.0 || ch!.loop!.0) || ch!.0)
+---- 1.+2 ----
+    (*loop?.ch?.0 || ch!.loop!.0)
+Resolved:
+(((ch!.0 + 0) || (ch!.0 || loop!.0)) || *loop?.ch?.0)

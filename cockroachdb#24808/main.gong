@@ -1,0 +1,6 @@
+Gong: [unfoldTillGuard] We don't deal with Seq yet: 
+main.NewCompactor4 <>; new 0 t0_0.(main.c.Suggest3 <t0_0>; new 0 t0_01.(main.c.Start <t0_01>; 0))
+
+real	0m0.004s
+user	0m0.000s
+sys	0m0.004s

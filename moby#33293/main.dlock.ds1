@@ -1,0 +1,14 @@
+Entering directory '/home/jorge/Code/MIEI/10S-Diss/Deadlock_Detector_and_Resolver'
+---- 1 ----
+    (t0!.0 + 0)
+---- 1.+1 ----
+    t0!.0
+---- 1.+2 ----
+    0
+
+
+Deadlocks:
+---- 1.+1 ----
+    t0!.0
+Resolved:
+(t0!.0 + 0)
