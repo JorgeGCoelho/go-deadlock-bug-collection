@@ -1,10 +1,10 @@
 Entering directory '/home/jorge/Code/MIEI/10S-Diss/Deadlock_Detector_and_Resolver'
----- 1 ----
-    (0 || t2?.0)
+--- 1 ---
+    t2?.0
 
 
 Deadlocks:
----- 1 ----
-    (0 || t2?.0)
+--- 1 ---
+    t2?.0 | top env: (t2?, )
 Resolved:
 t2?.0

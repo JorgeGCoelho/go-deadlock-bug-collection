@@ -1,24 +1,24 @@
 Entering directory '/home/jorge/Code/MIEI/10S-Diss/Deadlock_Detector_and_Resolver'
----- 1 ----
+--- 1 ---
     ((0 + (ch?.0 & errCh?.0)) || (errCh!.0 + ch!.0))
----- 1.+1 ----
+--- 1.+1 ---
     (errCh!.0 + ch!.0)
----- 1.+1.+1 ----
+--- 1.+1.+1 ---
     errCh!.0
----- 1.+1.+2 ----
+--- 1.+1.+2 ---
     ch!.0
----- 1.+2 ----
+--- 1.+2 ---
     ((errCh!.0 + ch!.0) || (ch?.0 & errCh?.0))
----- 1.+2.+2.ch ----
+--- 1.+2.+2.ch ---
     0
----- 1.+2.+1.errCh ----
+--- 1.+2.+1.errCh ---
     0
 
 
 Deadlocks:
----- 1.+1.+1 ----
-    errCh!.0
----- 1.+1.+2 ----
-    ch!.0
+--- 1.+1.+1 ---
+    errCh!.0 | top env: (errCh!, )
+--- 1.+1.+2 ---
+    ch!.0 | top env: (ch!, )
 Resolved:
 ((0 + (ch?.0 & errCh?.0)) || (errCh!.0 + ch!.0))
